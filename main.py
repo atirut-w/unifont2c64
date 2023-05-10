@@ -8,7 +8,7 @@ def main(args: dict[str, any]) -> None:
         with open(args.input, "r") as f:
             for line in f:
                 codepint, bitmap = line.strip().split(":")
-                characters[int(codepint, 16)] = int(bitmap, 16)
+                characters[int(codepint, 16)] = int(bitmap[:16], 16)
     except FileNotFoundError:
         print(f"File not found: {args.input}")
         exit(1)

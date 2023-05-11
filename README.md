@@ -1,2 +1,2 @@
 # Unifont2C64
-WIP
+Convert Unifont `.hex` files to C64 character ROM
